@@ -1,44 +1,39 @@
-<?php
-
-if($_POST["submit"]) {
-    $recipient="rebecca_dagenais@live.ca";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?><!DOCTYPE html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en-ca">
 <head>
-    <meta charset="utf-8">
-    <title>Contact form to email</title>
+  <meta charset="utf-8">
+  <title>Michelle & Kevin</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="main.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <?=$thankYou ?>
+<header class="head">
+	<img class="logo" src="img/logo.svg" alt="">
+</header>
 
-    <form method="post" action="contact.php">
-        <label>Name:</label>
-        <input name="sender">
+<h1 class="title">Michelle & Kevin</h1>
 
-        <label>Email address:</label>
-        <input name="senderEmail">
+<form 
+  action="mailto:rebecca_dagenais@live.ca"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailTestForm">
 
-        <label>Message:</label>
-        <textarea rows="5" cols="20" name="message"></textarea>
+Your Name:<br>
+<input type="text" size="20" name="VisitorName"><br><br>
 
-        <input type="submit" name="submit">
-    </form>
+Your Comment:<br>
+<textarea name="VisitorComment" rows="4" cols="20">
+</textarea><br><br>
 
+<input type="submit" value="Email This Form">
+
+</form>
+
+
+<footer class="footer">
+
+</footer>
 </body>
-
 </html>
