@@ -5,6 +5,8 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 
   -moz-text-size-adjust: 100%;
@@ -29,44 +31,78 @@ img {
 	width: 100%;
 }
 
+.main {
+  height: 100vh;
+}
+
 .head {
   background-color: rgb(75, 192, 182);
-  padding: 2em;
+  overflow: hidden;
+  width: 100%;
 }
 
 .logo {
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-
-.nav {
-  height: 3em;
-  width: 50%;
   margin-right: auto;
   margin-left: auto;
-  color: white;
+  width: 25%;
 }
 
-.nav a {
-  text-decoration: none;
-  color: white;
-
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+  bottom: 1%;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  right: 1.5em;
+  width: 46px;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
-ul {
+.nav > ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  text-align: center;
 }
 
-li {
-  float: left;
-  text-align: center;
-  width: 33%;
+.nav li {
+  display: inline-block;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  display: block;
+  padding: .5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active {
+  color: #37726C;
+}
+
+.img-holder {
+    position: relative;
+}
+
+.image {
+  width: 120%;
 }
 
 .title {
-  color: rgb(75, 192, 182);
+  position: absolute;
+  bottom: 10%;
+  color: white;
   text-align: center;
+  background-color: rgba(75, 192, 182, .5);
+  line-height: 1em;
+  padding: .5em;
+  width: 100%;
 }
 
 .footer {
@@ -74,5 +110,24 @@ li {
   padding: 2em;
 }
 
+
+@media only screen and (min-width: 38em) {
+
+.logo {
+  width: 50%;
+}
+
+.nav li {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+}
+
+
+@media only screen and (min-width: 60em) {
+
+}
 
 
