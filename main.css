@@ -40,13 +40,38 @@ img {
   width: 30%;
 }
 
+.nav {
+  height: 3em;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  float: left;
+  text-align: center;
+  width: 33%;
+}
+
 .title {
   color: rgb(75, 192, 182);
   text-align: center;
 }
 
-
-
+.form {
+  padding-top: -10em;
+}
 
 
 .footer {
