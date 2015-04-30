@@ -91,12 +91,24 @@ img {
 .title {
   font-family: 'Open Sans', sans-serif;
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   color: white;
   text-align: center;
   background-color: rgba(75, 192, 182, .7);
   line-height: 1em;
   padding: .5em;
+  width: 100%;
+}
+
+.title-gallery {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 40%;
+  color: white;
+  text-align: center;
+  background-color: rgba(75, 192, 182, .7);
+  line-height: 1em;
+  padding: 2em;
   width: 100%;
 }
 
@@ -155,6 +167,10 @@ img {
 @media only screen and (min-width: 38em) {
 
   .title {
+    font-size: 3em;
+  }
+
+  .title-gallery {
     font-size: 3em;
   }
 
