@@ -204,6 +204,16 @@ hr {
   margin-bottom: 2em;
 }
 
+.pictures{
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.pad {
+  padding: .5em;
+}
+
 .footer {
   background-color: rgb(75, 192, 182);
   height: 8em;
